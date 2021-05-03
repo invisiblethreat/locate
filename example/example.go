@@ -7,10 +7,10 @@ import (
 )
 
 func main() {
-	fmt.Printf("You're in %s\n", locate.WhereAmI())
+	fmt.Printf("package.function:file:line %s\n", locate.Location())
 	example()
 }
 
 func example() {
-	fmt.Printf("You're in %s\n", locate.WhereAmI())
+	fmt.Printf("package.function:file:line %s\n", locate.Location())
 }
